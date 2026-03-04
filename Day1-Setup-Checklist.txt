@@ -1,0 +1,56 @@
+Day 1 Setup Checklist (Newsletter Audio App)
+Date: March 3, 2026
+
+GOAL
+Set up the minimum accounts and access needed so coding can start immediately.
+
+ACCOUNTS YOU NEED TO CREATE (IN ORDER)
+1) GitHub
+   - Create (or choose) a repository for the project.
+   - Add me as collaborator access if needed in your workflow.
+
+2) Cloudflare
+   - Enable: Workers, D1, Queues, and R2.
+   - Create one R2 bucket: newsletter-audio-files.
+   - Create API token with permissions for Workers/D1/Queues/R2.
+
+3) Optional now (required later for cloud voice generation): AWS
+   - Enable Amazon Polly.
+   - Create IAM user/role with minimum Polly permissions.
+
+4) Optional now (required only when publishing iOS app): Apple Developer
+   - Enroll in Apple Developer Program.
+   - Ensure App Store Connect access.
+
+SECRETS YOU WILL ADD (PERSONALLY)
+- CLOUDFLARE_ACCOUNT_ID
+- CLOUDFLARE_API_TOKEN
+- R2_BUCKET_NAME
+- AWS_ACCESS_KEY_ID (if using Polly)
+- AWS_SECRET_ACCESS_KEY (if using Polly)
+- AWS_REGION (if using Polly)
+
+WHAT YOU WILL DO PERSONALLY
+- Create and verify vendor accounts.
+- Add billing method where needed.
+- Generate and store API keys/secrets in provider dashboards.
+- Accept legal terms, privacy policy ownership, and account agreements.
+- Perform final App Store signing/submission steps (if publishing iOS).
+
+WHAT I CAN DO FOR YOU
+- Build full codebase (frontend + backend + ingestion + extraction + audio pipeline).
+- Design DB schema, API endpoints, queues, cron jobs, and storage layout.
+- Implement security baseline (auth checks, signed URLs, input validation).
+- Configure deployment files and environment templates.
+- Prepare App Store submission checklist and metadata drafts.
+
+RECOMMENDED LOW-COST START
+- Use Cloudflare stack + device/browser TTS first.
+- Add paid cloud TTS only when you need downloadable pre-generated audio.
+
+HANDOFF TO START BUILDING
+When ready, share:
+1) Repo URL
+2) Which runtime you prefer first: web-only or iOS-first
+3) Whether to start with device TTS (free) or Polly (paid)
+
