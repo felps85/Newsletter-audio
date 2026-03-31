@@ -108,12 +108,11 @@ a {
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-  gap: 22px;
+  gap: 32px;
   align-items: center;
 }
 
 .hero-copy,
-.panel,
 .download-strip {
   background: var(--panel);
   border: 1px solid transparent;
@@ -199,25 +198,22 @@ h1 {
 .install-layout {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
-}
-
-.panel {
-  padding: 24px;
+  gap: 36px;
 }
 
 .summary-block {
   display: grid;
-  gap: 10px;
+  gap: 12px;
+  padding: 6px 0 0;
 }
 
-.panel h2 {
+.summary-block h2 {
   font-size: 1.35rem;
   font-weight: 400;
   letter-spacing: -0.03em;
 }
 
-.panel p {
+.summary-block p {
   color: var(--muted);
   line-height: 1.65;
 }
@@ -239,27 +235,29 @@ h1 {
   letter-spacing: -0.04em;
 }
 
-.feature-grid {
+.feature-list {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 28px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-.feature-card {
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.34);
-  border: 1px solid transparent;
-  border-radius: 20px;
+.feature-list li {
+  display: grid;
+  gap: 6px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
 }
 
-.feature-card h3 {
+.feature-list strong {
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: -0.02em;
-  margin-bottom: 8px;
 }
 
-.feature-card p {
+.feature-list span {
   color: var(--muted);
   line-height: 1.6;
   font-size: 0.92rem;
@@ -267,10 +265,16 @@ h1 {
 
 .warning-panel {
   background: linear-gradient(180deg, rgba(255, 243, 221, 0.92), rgba(255, 247, 233, 0.88));
+  padding: 22px 24px;
+  border-radius: 18px;
 }
 
 .warning-panel p {
   color: #51442c;
+}
+
+.install-steps {
+  padding-top: 4px;
 }
 
 .steps {
@@ -301,7 +305,7 @@ h1 {
 
   .hero,
   .summary,
-  .feature-grid,
+  .feature-list,
   .install-layout {
     grid-template-columns: 1fr;
   }
@@ -324,7 +328,6 @@ h1 {
   }
 
   .hero-copy,
-  .panel,
   .download-strip {
     padding: 22px;
   }

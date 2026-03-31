@@ -51,7 +51,7 @@
           </div>
         </section>
 
-        <section class="summary panel">
+        <section class="summary">
           <div class="summary-block">
             <p class="panel-kicker">What we were building</p>
             <h2>A local inbox for newsletter listening.</h2>
@@ -74,24 +74,12 @@
             <p class="eyebrow">Current prototype</p>
             <h2>What works today</h2>
           </div>
-          <div class="feature-grid">
-            <article class="feature-card">
-              <h3>Sync locally</h3>
-              <p>Connect Gmail or IMAP and pull newsletters into one place.</p>
-            </article>
-            <article class="feature-card">
-              <h3>Read two ways</h3>
-              <p>Switch between a cleaned reading view and the original layout.</p>
-            </article>
-            <article class="feature-card">
-              <h3>Listen back</h3>
-              <p>Turn the important content into local speech playback.</p>
-            </article>
-            <article class="feature-card">
-              <h3>Mac prototype</h3>
-              <p>The current build opens as a macOS app window and stays local.</p>
-            </article>
-          </div>
+          <ul class="feature-list">
+            <li><strong>Sync locally</strong><span>Connect Gmail or IMAP and pull newsletters into one place.</span></li>
+            <li><strong>Read two ways</strong><span>Switch between a cleaned reading view and the original layout.</span></li>
+            <li><strong>Listen back</strong><span>Turn the important content into local speech playback.</span></li>
+            <li><strong>Mac prototype</strong><span>The current build opens as a macOS app window and stays local.</span></li>
+          </ul>
         </section>
 
         <section id="install-note" class="install-note">
@@ -100,7 +88,7 @@
             <h2>Why installing the app still takes an extra step</h2>
           </div>
           <div class="install-layout">
-            <article class="panel warning-panel">
+            <article class="warning-panel">
               <p>
                 We are <strong>not paying for the Apple Developer Program yet</strong>, so this build is not signed or
                 notarized by Apple.
@@ -109,7 +97,7 @@
                 macOS may warn that it cannot verify the app, so opening the prototype still takes one manual step.
               </p>
             </article>
-            <article class="panel">
+            <article class="install-steps">
               <ol class="steps">
                 <li>Download the DMG and drag <strong>ListenUp.app</strong> into Applications.</li>
                 <li>Right-click the app and choose <strong>Open</strong>.</li>
