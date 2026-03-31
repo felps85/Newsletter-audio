@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ListenUp | Local-First Newsletter Audio</title>
+    <meta
+      name="description"
+      content="ListenUp is a local-first macOS proof of concept for turning newsletters into a calm listening experience."
+    />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand">
+          <span class="brand-mark">||</span>
+          <span>ListenUp</span>
+        </div>
+        <a class="header-link" href="./downloads/ListenUp.dmg" download>Download DMG</a>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Proof of Concept</p>
+            <h1>A calmer way to keep up with newsletters.</h1>
+            <p class="lead">
+              ListenUp is a local-first macOS prototype that pulls newsletters into one place, strips away the noise,
+              preserves the original layout when you want it, and turns the important content into something you can
+              listen to.
+            </p>
+            <div class="hero-actions">
+              <a class="primary-btn" href="./downloads/ListenUp.dmg" download>Download macOS prototype</a>
+              <a class="secondary-btn" href="#install-note">Install notes</a>
+            </div>
+          </div>
+          <div class="hero-preview">
+            <img src="./assets/listenup-preview.png" alt="ListenUp newsletter reader preview" />
+          </div>
+        </section>
+
+        <section class="info-grid">
+          <article class="panel">
+            <p class="panel-kicker">What we were trying to build</p>
+            <h2>A local inbox for newsletter listening.</h2>
+            <p>
+              The goal was to explore a simple desktop experience where newsletters live outside the clutter of email,
+              can be grouped by source, and can be read either as clean text or in their original newsletter layout.
+            </p>
+          </article>
+          <article class="panel">
+            <p class="panel-kicker">Why local-first</p>
+            <h2>Private by default and inexpensive to run.</h2>
+            <p>
+              This prototype runs on your Mac, stores data locally, uses macOS-friendly credential storage, and avoids
+              the cost and complexity of maintaining a hosted backend while the product direction is still evolving.
+            </p>
+          </article>
+        </section>
+
+        <section class="features">
+          <div class="section-head">
+            <p class="eyebrow">Current prototype</p>
+            <h2>What works today</h2>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <h3>Local Gmail or IMAP sync</h3>
+              <p>Connect a mailbox locally and sync newsletters into a dedicated reading interface.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Reader and Original modes</h3>
+              <p>Switch between a cleaned reading view and the original newsletter layout when it’s available.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Audio playback</h3>
+              <p>Listen to the important content with local speech playback instead of reading long email threads.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Local desktop prototype</h3>
+              <p>The current build opens as a macOS app window and keeps all data on the user’s machine.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="install-note" class="install-note">
+          <div class="section-head">
+            <p class="eyebrow">Testing note</p>
+            <h2>Why installing the app still takes an extra step</h2>
+          </div>
+          <div class="install-layout">
+            <article class="panel warning-panel">
+              <p>
+                We are <strong>not paying for the Apple Developer Program yet</strong>, so this prototype is not signed
+                or notarized by Apple.
+              </p>
+              <p>
+                That means macOS may warn that it cannot verify the app. The build is meant for proof-of-concept
+                testing, but it does require a manual confirmation to open.
+              </p>
+            </article>
+            <article class="panel">
+              <ol class="steps">
+                <li>Download the DMG and drag <strong>ListenUp.app</strong> into Applications.</li>
+                <li>Right-click the app and choose <strong>Open</strong>.</li>
+                <li>If macOS blocks it, go to <strong>System Settings → Privacy &amp; Security</strong>.</li>
+                <li>Use <strong>Open Anyway</strong> for the app, then launch it again.</li>
+              </ol>
+            </article>
+          </div>
+        </section>
+
+        <section class="download-strip">
+          <div>
+            <p class="eyebrow">Prototype build</p>
+            <h2>Download the current macOS proof of concept</h2>
+          </div>
+          <a class="primary-btn" href="./downloads/ListenUp.dmg" download>Download ListenUp.dmg</a>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
