@@ -40,7 +40,12 @@ a {
   max-width: 1160px;
   margin: 0 auto;
   display: grid;
-  gap: 20px;
+  gap: 28px;
+}
+
+main {
+  display: grid;
+  gap: 72px;
 }
 
 .site-header {
@@ -48,10 +53,7 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 14px 18px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.42);
-  border: 1px solid transparent;
+  padding: 6px 0 0;
 }
 
 .brand {
@@ -89,8 +91,8 @@ a {
 
 .header-link,
 .secondary-btn {
-  background: rgba(255, 255, 255, 0.44);
-  border: 1px solid transparent;
+  background: transparent;
+  border: 0;
 }
 
 .primary-btn {
@@ -114,14 +116,14 @@ a {
 
 .hero-copy,
 .download-strip {
-  background: var(--panel);
-  border: 1px solid transparent;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .hero-copy {
-  padding: 30px;
+  padding: 0;
 }
 
 .eyebrow,
@@ -181,30 +183,31 @@ h1 {
 }
 
 .hero-preview {
-  padding: 10px;
-  border-radius: 28px;
-  background: rgba(255, 255, 255, 0.36);
-  border: 1px solid transparent;
-  box-shadow: var(--shadow);
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
 }
 
 .hero-preview img {
   display: block;
   width: 100%;
-  border-radius: 22px;
+  border-radius: 18px;
+  box-shadow: 0 12px 36px rgba(16, 17, 20, 0.06);
 }
 
 .summary,
 .install-layout {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 36px;
+  gap: 48px;
 }
 
 .summary-block {
   display: grid;
   gap: 12px;
-  padding: 6px 0 0;
+  padding: 0;
 }
 
 .summary-block h2 {
@@ -221,7 +224,7 @@ h1 {
 .features,
 .install-note {
   display: grid;
-  gap: 14px;
+  gap: 18px;
 }
 
 .section-head {
@@ -238,7 +241,7 @@ h1 {
 .feature-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px 28px;
+  gap: 22px 36px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -247,7 +250,7 @@ h1 {
 .feature-list li {
   display: grid;
   gap: 6px;
-  padding-top: 14px;
+  padding-top: 16px;
   border-top: 1px solid var(--line);
 }
 
@@ -265,8 +268,8 @@ h1 {
 
 .warning-panel {
   background: linear-gradient(180deg, rgba(255, 243, 221, 0.92), rgba(255, 247, 233, 0.88));
-  padding: 22px 24px;
-  border-radius: 18px;
+  padding: 18px 20px;
+  border-radius: 14px;
 }
 
 .warning-panel p {
@@ -289,7 +292,9 @@ h1 {
   align-items: center;
   justify-content: space-between;
   gap: 18px;
-  padding: 22px 24px;
+  padding: 0;
+  border-top: 1px solid var(--line);
+  padding-top: 28px;
 }
 
 .download-strip h2 {
@@ -303,16 +308,15 @@ h1 {
     padding: 18px;
   }
 
+  main {
+    gap: 56px;
+  }
+
   .hero,
   .summary,
   .feature-list,
   .install-layout {
     grid-template-columns: 1fr;
-  }
-
-  .download-strip,
-  .site-header {
-    border-radius: 24px;
   }
 
   .download-strip {
@@ -329,7 +333,7 @@ h1 {
 
   .hero-copy,
   .download-strip {
-    padding: 22px;
+    padding: 0;
   }
 
   h1 {
